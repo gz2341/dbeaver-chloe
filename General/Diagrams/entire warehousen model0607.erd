@@ -1,0 +1,986 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="ERD dbschema0607.erd">
+	<entities>
+		<data-source id="postgres-redshift-jdbc-1888be0366d-6484c7c62dee3c8b">
+			<entity id="1" name="f_aems_event_audit_feed" fq-name="ads_main.f_aems_event_audit_feed" order="3" color-bg="128,0,255" x="9920" y="434">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="2" name="d_date" fq-name="ads_main.d_date" order="4" color-bg="128,255,128" x="7775" y="-1708">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="3" name="d_event_plan" fq-name="ads_main.d_event_plan" order="1" color-bg="255,128,128" x="7780" y="-920">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="4" name="d_event_master" fq-name="ads_main.d_event_master" order="5" x="10815" y="3154">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="5" name="d_engagement_event" fq-name="ads_main.d_engagement_event" order="6" x="9935" y="4134">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="6" name="f_cons_engagement_event" fq-name="ads_main.f_cons_engagement_event" order="7" color-bg="128,255,255" x="9155" y="3394">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="7" name="f_avail_event_seats" fq-name="ads_main.f_avail_event_seats" order="8" color-bg="128,128,255" x="7080" y="1474">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="8" name="f_ticket_sales_event_audit" fq-name="ads_main.f_ticket_sales_event_audit" order="9" color-bg="128,0,255" x="10860" y="434">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="9" name="f_ticket_exchange_event_seat" fq-name="ads_main.f_ticket_exchange_event_seat" order="10" color-bg="128,128,255" x="5400" y="1474">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="10" name="f_event_cost" fq-name="ads_main.f_event_cost" order="11" color-bg="128,255,255" x="9895" y="3154">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="11" name="f_held_event_seat" fq-name="ads_main.f_held_event_seat" showAttrs="ALL" order="12" color-bg="128,128,255" x="6780" y="1474">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="12" name="f_avail_event_seat" fq-name="ads_main.f_avail_event_seat" order="13" color-bg="128,128,255" x="7440" y="1234">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="13" name="f_ticket_held_event_seat" fq-name="ads_main.f_ticket_held_event_seat" order="14" color-bg="128,128,255" x="6080" y="1474">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="14" name="f_ticket_avail_event_seat" fq-name="ads_main.f_ticket_avail_event_seat" order="15" color-bg="128,128,255" x="6440" y="1474">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="15" name="f_ticket_inventory_event_seat" fq-name="ads_main.f_ticket_inventory_event_seat" order="16" color-bg="128,128,255" x="5740" y="1474">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="16" name="f_ticket_sales_event_audit_detail_daily" fq-name="ads_main.f_ticket_sales_event_audit_detail_daily" order="17" color-bg="128,0,255" x="9520" y="434">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="17" name="f_attendance_event_seat" fq-name="ads_main.f_attendance_event_seat" order="18" color-bg="128,128,255" x="7600" y="1474">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="18" name="f_ticket_sales_host_event_audit" fq-name="ads_main.f_ticket_sales_host_event_audit" order="19" color-bg="128,0,255" x="10175" y="432">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="19" name="t_ticket_sales_event_data_quality" fq-name="ads_main.t_ticket_sales_event_data_quality" order="20" color-bg="128,0,255" x="11820" y="434">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="20" name="f_ticket_sales_host_event_audit_snapshot" fq-name="ads_main.f_ticket_sales_host_event_audit_snapshot" order="21" color-bg="128,0,255" x="10475" y="432">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="21" name="f_ticket_sales_event_seat" fq-name="ads_main.f_ticket_sales_event_seat" order="22" color-bg="128,128,255" x="6200" y="2640">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="22" name="f_ticket_sales_event_audit_detail" fq-name="ads_main.f_ticket_sales_event_audit_detail" order="23" color-bg="128,0,255" x="9160" y="434">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="23" name="f_fmb_sales_hdr_dtls" fq-name="ads_main.f_fmb_sales_hdr_dtls" order="24" color-bg="255,128,64" x="10910" y="-2687">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="24" name="f_fmb_sales_product_dtls" fq-name="ads_main.f_fmb_sales_product_dtls" order="25" color-bg="255,128,64" x="10230" y="-2687">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="25" name="f_fmb_sales_tender_dtls" fq-name="ads_main.f_fmb_sales_tender_dtls" order="26" color-bg="255,128,64" x="9340" y="-2700">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="26" name="f_fmb_sales_hdr_dtls_test" fq-name="ads_main.f_fmb_sales_hdr_dtls_test" order="27" color-bg="255,128,64" x="11290" y="-2687">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="27" name="f_fmb_sales_product_dtls_test" fq-name="ads_main.f_fmb_sales_product_dtls_test" order="28" color-bg="255,128,64" x="10550" y="-2687">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="28" name="f_fmb_sales_tender_dtls_test" fq-name="ads_main.f_fmb_sales_tender_dtls_test" order="37" color-bg="255,128,64" x="9695" y="-2696">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="29" name="f_ticket_sales_event_seat_backup_dpt_522" fq-name="ads_main.f_ticket_sales_event_seat_backup_dpt_522" order="38" color-bg="128,128,255" x="5780" y="2660">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="30" name="f_ticket_sales_event_audit_daily" fq-name="ads_main.f_ticket_sales_event_audit_daily" order="40" color-bg="128,0,255" x="11160" y="434">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="31" name="f_exctgt_matchback" fq-name="ads_main.f_exctgt_matchback" order="41" color-bg="0,128,128" x="7500" y="-2980">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="32" name="f_ticket_sales_event_audit_snapshot" fq-name="ads_main.f_ticket_sales_event_audit_snapshot" order="60" color-bg="128,0,255" x="11500" y="434">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="33" name="f_fmb_sales_discount_dtls" fq-name="ads_main.f_fmb_sales_discount_dtls" order="61" color-bg="255,128,64" x="8875" y="-2696">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="34" name="d_ticket_xref" fq-name="ads_main.d_ticket_xref" order="62" x="8560" y="1474">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="35" name="d_ticket_xref_old" fq-name="ads_main.d_ticket_xref_old" order="63" x="8780" y="1474">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="36" name="f_ticket_activity_life_cycle" fq-name="ads_main.f_ticket_activity_life_cycle" order="64" color-bg="128,128,255" x="8180" y="1474">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="37" name="f_cons_event_summary" fq-name="ads_main.f_cons_event_summary" order="65" color-bg="128,255,255" x="8775" y="3394">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="38" name="d_ticket_promo_code" fq-name="ads_main.d_ticket_promo_code" order="66" x="6170" y="3902">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="39" name="d_price_code" fq-name="ads_main.d_price_code" order="82" color-bg="128,255,128" x="7460" y="3500">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="40" name="t_fmb_sales_event_location" fq-name="ads_main.t_fmb_sales_event_location" order="83" color-bg="255,128,64" x="11690" y="-2687">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="41" name="d_ticket_premium_charge" fq-name="ads_main.d_ticket_premium_charge" order="84" x="5630" y="4182">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="42" name="d_account_rep" fq-name="ads_main.d_account_rep" order="85" x="5890" y="3902">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="43" name="d_customer_account" fq-name="ads_main.d_customer_account" order="86" x="5715" y="-563">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="44" name="f_fmb_spoilage_dtls" fq-name="ads_main.f_fmb_spoilage_dtls" order="87" color-bg="255,128,64" x="8635" y="-2696">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="45" name="d_location" fq-name="ads_main.d_location" order="88" color-bg="128,255,128" x="9635" y="-3956">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="46" name="f_fmb_merchandise_inventory_bkp" fq-name="ads_main.f_fmb_merchandise_inventory_bkp" showAttrs="ALL" order="89" color-bg="255,128,64" x="8335" y="-2696">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="47" name="d_terminal" fq-name="ads_main.d_terminal" order="90" color-bg="128,255,128" x="9895" y="-3956">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="48" name="d_product" fq-name="ads_main.d_product" order="91" x="8655" y="-4256">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="49" name="f_fmb_merchandise_inventory" fq-name="ads_main.f_fmb_merchandise_inventory" order="92" color-bg="255,128,64" x="8075" y="-2696">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="50" name="f_wfm_clock_activity_daily_summary" fq-name="ads_main.f_wfm_clock_activity_daily_summary" order="93" color-bg="192,192,192" x="10515" y="-3976">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="51" name="d_wfm_venue" fq-name="ads_main.d_wfm_venue" order="94" color-bg="128,255,128" x="10495" y="-3276">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="52" name="f_wfm_clock_activity" fq-name="ads_main.f_wfm_clock_activity" order="95" color-bg="192,192,192" x="10915" y="-3976">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="53" name="d_discount" fq-name="ads_main.d_discount" order="96" x="8915" y="-2056">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="54" name="d_product_ingredients" fq-name="ads_main.d_product_ingredients" order="97" x="8235" y="-3596">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="55" name="d_accessmanager" fq-name="ads_main.d_accessmanager" order="98" x="5630" y="3902">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="56" name="d_arena_gate" fq-name="ads_main.d_arena_gate" order="99" x="7940" y="2400">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="57" name="d_attendance_access" fq-name="ads_main.d_attendance_access" order="133" x="7660" y="2400">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="58" name="d_attendance_scan_result" fq-name="ads_main.d_attendance_scan_result" order="100" x="7940" y="2120">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="59" name="d_business_org" fq-name="ads_main.d_business_org" order="101" x="10610" y="3150">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="60" name="d_seasons" fq-name="ads_main.d_seasons" order="102" x="10610" y="3470">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="61" name="f_executive_kpi_dashboard" fq-name="ads_main.f_executive_kpi_dashboard" order="103" color-bg="128,255,255" x="10235" y="3154">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="62" name="d_sfdc_koreps_season" fq-name="ads_main.d_sfdc_koreps_season" order="105" x="4320" y="2780">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="63" name="f_sfdc_opportunity" fq-name="ads_main.f_sfdc_opportunity" order="106" color-bg="187,187,119" x="2994" y="3848">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="64" name="d_sfdc_user" fq-name="ads_main.d_sfdc_user" order="107" x="1140" y="2780">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="65" name="f_sfdc_suit_usage" fq-name="ads_main.f_sfdc_suit_usage" order="108" color-bg="187,187,119" x="3800" y="3820">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="66" name="d_sfdc_account" fq-name="ads_main.d_sfdc_account" order="109" x="680" y="2780">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="67" name="d_sfdc_contact" fq-name="ads_main.d_sfdc_contact" order="110" x="1660" y="2780">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="68" name="d_sfdc_campaign" fq-name="ads_main.d_sfdc_campaign" order="111" x="2160" y="2780">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="69" name="d_sfdc_recordtype" fq-name="ads_main.d_sfdc_recordtype" order="112" x="3995" y="2780">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="70" name="d_sfdc_bank" fq-name="ads_main.d_sfdc_bank" order="113" x="2680" y="2780">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="71" name="d_sfdc_koreps_event" fq-name="ads_main.d_sfdc_koreps_event" order="114" x="4780" y="2780">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="72" name="d_sfdc_koreps_industry" fq-name="ads_main.d_sfdc_koreps_industry" order="117" x="3395" y="2780">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="73" name="d_sfdc_koreps_division" fq-name="ads_main.d_sfdc_koreps_division" order="122" x="3075" y="2780">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="74" name="d_sfdc_opportunity_item" fq-name="ads_main.d_sfdc_opportunity_item" order="42" x="3695" y="2780">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="75" name="d_customer_email_master" fq-name="ads_main.d_customer_email_master" order="43" x="4080" y="-412">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="76" name="d_customer_master" fq-name="ads_main.d_customer_master" order="58" x="4775" y="-611">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="77" name="d_customer_master_keys" fq-name="ads_main.d_customer_master_keys" order="59" x="5600" y="-1920">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="78" name="f_fan_property_channel" fq-name="ads_main.f_fan_property_channel" order="44" color-bg="255,0,128" x="5430" y="-1211">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="79" name="f_fan_property" fq-name="ads_main.f_fan_property" order="56" color-bg="255,0,128" x="5150" y="-1211">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="80" name="f_leagueapps_registration" fq-name="ads_main.f_leagueapps_registration" order="57" color-bg="255,0,128" x="4360" y="-1220">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="81" name="f_form_submissions" fq-name="ads_main.f_form_submissions" order="45" color-bg="255,0,128" x="4070" y="-1227">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="82" name="d_exctgt_subscribers" fq-name="ads_main.d_exctgt_subscribers" order="46" x="6860" y="-3700">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="83" name="d_forms_customer_account" fq-name="ads_main.d_forms_customer_account" order="54" x="4070" y="-1870">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="84" name="d_leagueapps_customer_account" fq-name="ads_main.d_leagueapps_customer_account" order="55" x="4330" y="-2080">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="85" name="d_exctgt_bounce_category" fq-name="ads_main.d_exctgt_bounce_category" order="47" x="5460" y="-2480">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="86" name="d_exctgt_brand" fq-name="ads_main.d_exctgt_brand" order="52" x="6720" y="-2780">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="87" name="d_exctgt_brand_bkp" fq-name="ads_main.d_exctgt_brand_bkp" order="53" x="6720" y="-2540">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="88" name="d_exctgt_click_url" fq-name="ads_main.d_exctgt_click_url" order="48" x="5980" y="-2360">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="89" name="d_exctgt_client_device" fq-name="ads_main.d_exctgt_client_device" order="49" x="5740" y="-2360">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="90" name="d_exctgt_email_lists" fq-name="ads_main.d_exctgt_email_lists" order="50" x="5820" y="-3780">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="91" name="d_exctgt_segment" fq-name="ads_main.d_exctgt_segment" order="51" x="5420" y="-3440">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="92" name="d_exctgt_sendjobs" fq-name="ads_main.d_exctgt_sendjobs" order="115" x="6100" y="-3900">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="93" name="f_typeform_account_question_response" fq-name="ads_main.f_typeform_account_question_response" order="116" color-bg="255,0,128" x="4750" y="-1211">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="94" name="f_medallia_survey_response_daily" fq-name="ads_main.f_medallia_survey_response_daily" order="167" color-bg="255,0,128" x="5690" y="-1211">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="95" name="f_exctgt_brand_email_snapshot_daily" fq-name="ads_main.f_exctgt_brand_email_snapshot_daily" order="118" color-bg="0,128,128" x="6260" y="-2980">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="96" name="f_exctgt_click_emails" fq-name="ads_main.f_exctgt_click_emails" order="119" color-bg="0,128,128" x="5980" y="-2980">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="97" name="f_exctgt_open_emails" fq-name="ads_main.f_exctgt_open_emails" order="120" color-bg="0,128,128" x="5720" y="-2980">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="98" name="f_exctgt_bounce_emails" fq-name="ads_main.f_exctgt_bounce_emails" order="121" color-bg="0,128,128" x="5460" y="-2980">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="99" name="f_exctgt_unsubs" fq-name="ads_main.f_exctgt_unsubs" order="123" color-bg="0,128,128" x="7800" y="-2980">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="100" name="f_exctgt_job_kpis" fq-name="ads_main.f_exctgt_job_kpis" order="126" color-bg="0,128,128" x="6940" y="-2980">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="101" name="f_exctgt_sent_emails" fq-name="ads_main.f_exctgt_sent_emails" order="124" color-bg="0,128,128" x="5180" y="-2980">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="102" name="f_exctgt_job_kpis_summary" fq-name="ads_main.f_exctgt_job_kpis_summary" order="125" color-bg="0,128,128" x="7220" y="-2980">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="103" name="d_deal_type" fq-name="ads_main.d_deal_type" order="127" x="9615" y="3774">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="104" name="d_emp_job" fq-name="ads_main.d_emp_job" order="128" x="11115" y="-3576">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="105" name="d_employee" fq-name="ads_main.d_employee" order="129" x="11515" y="-3416">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="106" name="d_engagement" fq-name="ads_main.d_engagement" order="130" x="9615" y="3354">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="107" name="d_fan_channel" fq-name="ads_main.d_fan_channel" order="131" x="5430" y="-831">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="108" name="d_fmb_misc" fq-name="ads_main.d_fmb_misc" order="132" x="10855" y="-3516">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="109" name="f_cons_fmb_attend_event" fq-name="ads_main.f_cons_fmb_attend_event" order="134" color-bg="128,255,255" x="8475" y="3394">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="110" name="f_emp_clock_activity_dly_cnt" fq-name="ads_main.f_emp_clock_activity_dly_cnt" order="135" color-bg="192,192,192" x="11195" y="-4236">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="111" name="d_wfm_emp_job" fq-name="ads_main.d_wfm_emp_job" order="136" x="11515" y="-4116">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="112" name="d_wfm_earning_code" fq-name="ads_main.d_wfm_earning_code" order="137" x="10315" y="-4076">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="113" name="d_wfm_exception_type" fq-name="ads_main.d_wfm_exception_type" order="138" x="10095" y="-4076">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="114" name="d_form" fq-name="ads_main.d_form" order="139" x="4075" y="-851">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="115" name="d_host_audit_ticket_type_flags" fq-name="ads_main.d_host_audit_ticket_type_flags" order="140" x="10175" y="992">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="116" name="d_host_dist_status" fq-name="ads_main.d_host_dist_status" order="141" x="7335" y="1713">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="117" name="d_leagueapps_misc" fq-name="ads_main.d_leagueapps_misc" order="142" x="4610" y="-1511">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="118" name="d_leagueapps_program" fq-name="ads_main.d_leagueapps_program" order="143" x="4350" y="-610">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="119" name="d_manifest_seat" fq-name="ads_main.d_manifest_seat" order="145" x="6415" y="-177">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="120" name="d_mdb_events" fq-name="ads_main.d_mdb_events" order="144" x="9635" y="4014">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="121" name="d_meal_period" fq-name="ads_main.d_meal_period" order="146" x="11330" y="-814">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="122" name="d_medallia_survey_questions" fq-name="ads_main.d_medallia_survey_questions" order="147" x="5690" y="-791">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="123" name="d_msg_employee" fq-name="ads_main.d_msg_employee" order="148" x="11935" y="-3636">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="124" name="d_non_msg_venue_events" fq-name="ads_main.d_non_msg_venue_events" order="149" x="11055" y="3154">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="125" name="d_property" fq-name="ads_main.d_property" order="150" x="5150" y="-1451">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="126" name="d_scenario_type" fq-name="ads_main.d_scenario_type" order="151" x="9615" y="3174">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="127" name="d_seat_class" fq-name="ads_main.d_seat_class" order="152" x="7415" y="2650">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="128" name="d_seat_kill_flag" fq-name="ads_main.d_seat_kill_flag" order="153" x="7175" y="2650">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="129" name="d_servicenow_incident_category" fq-name="ads_main.d_servicenow_incident_category" order="154" x="3574" y="556">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="130" name="d_servicenow_sc_cat_item" fq-name="ads_main.d_servicenow_sc_cat_item" order="155" x="2409" y="557">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="131" name="d_servicenow_sc_cat_item_old" fq-name="ads_main.d_servicenow_sc_cat_item_old" order="156" x="2709" y="557">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="132" name="d_servicenow_sys_user" fq-name="ads_main.d_servicenow_sys_user" order="157" x="3009" y="557">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="133" name="d_servicenow_sys_user_group" fq-name="ads_main.d_servicenow_sys_user_group" order="166" x="3294" y="556">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="134" name="d_show_status" fq-name="ads_main.d_show_status" order="168" x="9975" y="2894">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="135" name="d_sprout_customer_tag" fq-name="ads_main.d_sprout_customer_tag" order="158" x="1459" y="528">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="136" name="d_sprout_network_endpoint" fq-name="ads_main.d_sprout_network_endpoint" order="159" x="1900" y="550">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="137" name="d_sprout_post_url" fq-name="ads_main.d_sprout_post_url" order="160" x="1679" y="488">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="138" name="d_tender" fq-name="ads_main.d_tender" order="161" x="9135" y="-2556">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="139" name="d_tender_test" fq-name="ads_main.d_tender_test" order="162" x="10015" y="-2376">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="140" name="d_ticket_came_from_code" fq-name="ads_main.d_ticket_came_from_code" order="163" x="6500" y="3260">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="141" name="d_ticket_came_from_code_copy" fq-name="ads_main.d_ticket_came_from_code_copy" order="164" x="6500" y="3480">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="142" name="f_sprout_data_post" fq-name="ads_main.f_sprout_data_post" order="165" x="1619" y="868">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="143" name="d_ticket_class" fq-name="ads_main.d_ticket_class" order="67" x="11335" y="2023">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="144" name="d_ticket_comp_code" fq-name="ads_main.d_ticket_comp_code" order="68" x="10870" y="2030">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="145" name="d_ticket_exchange_activity" fq-name="ads_main.d_ticket_exchange_activity" order="69" x="5400" y="1234">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="146" name="d_ticket_flags" fq-name="ads_main.d_ticket_flags" order="70" x="11615" y="2023">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="147" name="d_ticket_ledger" fq-name="ads_main.d_ticket_ledger" order="78" x="6390" y="3902">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="148" name="d_ticket_retail" fq-name="ads_main.d_ticket_retail" order="79" x="11115" y="2023">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="149" name="d_ticket_sell_location" fq-name="ads_main.d_ticket_sell_location" order="80" x="11850" y="2024">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="150" name="d_ticket_status" fq-name="ads_main.d_ticket_status" order="81" x="5760" y="2114">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="151" name="d_ticket_type_desc" fq-name="ads_main.d_ticket_type_desc" order="71" x="6950" y="2652">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="152" name="d_ticket_type_flags" fq-name="ads_main.d_ticket_type_flags" order="72" x="6755" y="-182">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="153" name="d_typeform_question" fq-name="ads_main.d_typeform_question" order="73" x="4810" y="-1511">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="154" name="d_typeform_response" fq-name="ads_main.d_typeform_response" order="74" x="4710" y="-891">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="155" name="d_valid_event_flag" fq-name="ads_main.d_valid_event_flag" order="75" x="10155" y="2894">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="156" name="d_venue_configuration" fq-name="ads_main.d_venue_configuration" order="39" x="9735" y="2894">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="157" name="d_void_copy" fq-name="ads_main.d_void_copy" order="76" x="11030" y="-809">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="158" name="d_void_reason" fq-name="ads_main.d_void_reason" order="77" x="10490" y="-809">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="159" name="d_void_reason_copy" fq-name="ads_main.d_void_reason_copy" order="29" x="10770" y="-809">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="160" name="f_microsoft_teams_user_activity_daily" fq-name="ads_main.f_microsoft_teams_user_activity_daily" order="30" color-bg="192,192,192" x="11770" y="-4369">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="161" name="f_servicenow_request_item" fq-name="ads_main.f_servicenow_request_item" order="31" x="3274" y="1416">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="162" name="f_servicenow_sc_req_item_variables" fq-name="ads_main.f_servicenow_sc_req_item_variables" order="32" x="4034" y="1416">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="163" name="f_servicenow_si_incident" fq-name="ads_main.f_servicenow_si_incident" order="33" x="3774" y="1416">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="164" name="f_servicenow_task" fq-name="ads_main.f_servicenow_task" order="34" x="3514" y="1416">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="165" name="f_sprout_data_profile" fq-name="ads_main.f_sprout_data_profile" order="35" x="1919" y="868">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="166" name="f_wfm_clock_activity_daily_summary_bkp" fq-name="ads_main.f_wfm_clock_activity_daily_summary_bkp" order="36" x="10195" y="-3916">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="167" name="f_front_gate" fq-name="ads_main.f_front_gate" order="104" x="7220" y="2980">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+		</data-source>
+	</entities>
+	<notes>
+		<note id="168" order="169" x="7480" y="-740" w="240" h="60">d_event_plan2, d_event_plan_orig</note>
+		<note id="169" order="2" color-bg="205,208,231" x="5400" y="1120" w="221" h="41">Ticket info</note>
+		<note id="170" order="0" color-bg="233,233,233" x="600" y="2720" w="4541" h="1661">Sfdc info</note>
+		<note id="171" order="170" color-bg="219,183,255" x="9140" y="274" w="240" h="40">Sales audit info</note>
+		<note id="172" order="171" color-bg="0,187,187" x="5160" y="-3180" w="210" h="45">Email/exctgt info</note>
+		<note id="173" order="172" color-bg="255,147,201" x="4035" y="-2106" w="220" h="40">Customer info</note>
+		<note id="174" order="173" color-bg="255,190,159" x="8220" y="-3780" w="320" h="60">production/transaction fmb sales info</note>
+		<note id="175" order="174" x="7560" y="-1720" w="120" h="60">d_date_sam
+d_date_bkp</note>
+		<note id="176" order="175" color-bg="223,223,223" x="10515" y="-4116" w="296" h="41">Employee/worktime info</note>
+		<note id="177" order="176" x="2410" y="462" w="146" h="36">Servicenow info</note>
+		<note id="178" order="177" color-bg="230,255,255" x="9455" y="3074" w="180" h="50">Event info</note>
+	</notes>
+	<relations>
+		<relation name="vfk_d_date_f_fmb_sales_discount_dtls" type="vfk" pk-ref="2" fk-ref="33"/>
+		<relation name="vfk_d_date_f_fmb_sales_tender_dtls" type="vfk" pk-ref="2" fk-ref="25"/>
+		<relation name="vfk_d_date_f_typeform_account_question_response" type="vfk" pk-ref="2" fk-ref="93"/>
+		<relation name="vfk_d_date_f_leagueapps_registration" type="vfk" pk-ref="2" fk-ref="80"/>
+		<relation name="vfk_d_date_f_form_submissions" type="vfk" pk-ref="2" fk-ref="81"/>
+		<relation name="vfk_d_date_f_fan_property" type="vfk" pk-ref="2" fk-ref="79"/>
+		<relation name="vfk_d_date_f_fan_property_channel" type="vfk" pk-ref="2" fk-ref="78"/>
+		<relation name="vfk_d_date_f_medallia_survey_response_daily" type="vfk" pk-ref="2" fk-ref="94"/>
+		<relation name="vfk_f_aems_event_audit_feed_d_event_plan" type="vfk" pk-ref="3" fk-ref="1"/>
+		<relation name="vfk_f_avail_event_seats_d_event_plan" type="vfk" pk-ref="3" fk-ref="7"/>
+		<relation name="vfk_f_ticket_sales_event_audit_d_event_plan" type="vfk" pk-ref="3" fk-ref="8"/>
+		<relation name="vfk_f_ticket_exchange_event_seat_d_event_plan" type="vfk" pk-ref="3" fk-ref="9"/>
+		<relation name="vfk_f_event_cost_d_event_plan" type="vfk" pk-ref="3" fk-ref="10"/>
+		<relation name="vfk_f_held_event_seat_d_event_plan" type="vfk" pk-ref="3" fk-ref="11"/>
+		<relation name="vfk_f_avail_event_seat_d_event_plan" type="vfk" pk-ref="3" fk-ref="12"/>
+		<relation name="vfk_f_ticket_held_event_seat_d_event_plan" type="vfk" pk-ref="3" fk-ref="13"/>
+		<relation name="vfk_f_ticket_avail_event_seat_d_event_plan" type="vfk" pk-ref="3" fk-ref="14"/>
+		<relation name="vfk_f_ticket_inventory_event_seat_d_event_plan" type="vfk" pk-ref="3" fk-ref="15"/>
+		<relation name="vfk_f_ticket_sales_event_audit_detail_daily_d_event_plan" type="vfk" pk-ref="3" fk-ref="16"/>
+		<relation name="vfk_f_attendance_event_seat_d_event_plan" type="vfk" pk-ref="3" fk-ref="17"/>
+		<relation name="vfk_f_ticket_sales_host_event_audit_d_event_plan" type="vfk" pk-ref="3" fk-ref="18"/>
+		<relation name="vfk_t_ticket_sales_event_data_quality_d_event_plan" type="vfk" pk-ref="3" fk-ref="19"/>
+		<relation name="vfk_f_ticket_sales_host_event_audit_snapshot_d_event_plan" type="vfk" pk-ref="3" fk-ref="20"/>
+		<relation name="vfk_f_ticket_sales_event_seat_d_event_plan" type="vfk" pk-ref="3" fk-ref="21"/>
+		<relation name="vfk_f_ticket_sales_event_audit_detail_d_event_plan" type="vfk" pk-ref="3" fk-ref="22"/>
+		<relation name="vfk_f_fmb_sales_hdr_dtls_d_event_plan" type="vfk" pk-ref="3" fk-ref="23"/>
+		<relation name="vfk_f_fmb_sales_product_dtls_d_event_plan" type="vfk" pk-ref="3" fk-ref="24"/>
+		<relation name="vfk_f_fmb_sales_tender_dtls_d_event_plan" type="vfk" pk-ref="3" fk-ref="25"/>
+		<relation name="vfk_f_fmb_sales_hdr_dtls_test_d_event_plan" type="vfk" pk-ref="3" fk-ref="26"/>
+		<relation name="vfk_f_fmb_sales_product_dtls_test_d_event_plan" type="vfk" pk-ref="3" fk-ref="27"/>
+		<relation name="vfk_f_fmb_sales_tender_dtls_test_d_event_plan" type="vfk" pk-ref="3" fk-ref="28"/>
+		<relation name="vfk_f_ticket_sales_event_seat_backup_dpt_522_d_event_plan" type="vfk" pk-ref="3" fk-ref="29"/>
+		<relation name="vfk_f_ticket_sales_event_audit_daily_d_event_plan" type="vfk" pk-ref="3" fk-ref="30"/>
+		<relation name="vfk_f_exctgt_matchback_d_event_plan" type="vfk" pk-ref="3" fk-ref="31"/>
+		<relation name="vfk_f_ticket_sales_event_audit_snapshot_d_event_plan" type="vfk" pk-ref="3" fk-ref="32"/>
+		<relation name="vfk_f_fmb_sales_discount_dtls_d_event_plan" type="vfk" pk-ref="3" fk-ref="33"/>
+		<relation name="vfk_f_ticket_activity_life_cycle_d_event_plan" type="vfk" pk-ref="3" fk-ref="36"/>
+		<relation name="vfk_f_cons_event_summary_d_event_plan" type="vfk" pk-ref="3" fk-ref="37"/>
+		<relation name="vfk_t_fmb_sales_event_location_d_event_plan" type="vfk" pk-ref="3" fk-ref="40"/>
+		<relation name="vfk_f_medallia_survey_response_daily_d_event_plan" type="vfk" pk-ref="3" fk-ref="94"/>
+		<relation name="vfk_f_front_gate_d_event_plan" type="vfk" pk-ref="3" fk-ref="167"/>
+		<relation name="vfk_f_aems_event_audit_feed_d_event_master" type="vfk" pk-ref="4" fk-ref="1"/>
+		<relation name="vfk_f_cons_engagement_event_d_engagement_event" type="vfk" pk-ref="5" fk-ref="6"/>
+		<relation name="vfk_f_event_cost_d_engagement_event" type="vfk" pk-ref="5" fk-ref="10"/>
+		<relation name="vfk_d_date_f_avail_event_seats" type="vfk" pk-ref="7" fk-ref="2"/>
+		<relation name="vfk_d_price_code_f_avail_event_seats" type="vfk" pk-ref="7" fk-ref="39"/>
+		<relation name="vfk_d_manifest_seat_f_avail_event_seats" type="vfk" pk-ref="7" fk-ref="119"/>
+		<relation name="vfk_d_seat_class_f_avail_event_seats" type="vfk" pk-ref="7" fk-ref="127"/>
+		<relation name="vfk_d_seat_kill_flag_f_avail_event_seats" type="vfk" pk-ref="7" fk-ref="128"/>
+		<relation name="vfk_d_price_code_f_ticket_sales_event_audit" type="vfk" pk-ref="8" fk-ref="39"/>
+		<relation name="vfk_d_manifest_seat_f_ticket_exchange_event_seat" type="vfk" pk-ref="9" fk-ref="119"/>
+		<relation name="vfk_d_deal_type_f_event_cost" type="vfk" pk-ref="10" fk-ref="103"/>
+		<relation name="vfk_d_engagement_f_event_cost" type="vfk" pk-ref="10" fk-ref="106"/>
+		<relation name="vfk_d_show_status_f_event_cost" type="vfk" pk-ref="10" fk-ref="134"/>
+		<relation name="vfk_d_valid_event_flag_f_event_cost" type="vfk" pk-ref="10" fk-ref="155"/>
+		<relation name="vfk_d_venue_configuration_f_event_cost" type="vfk" pk-ref="10" fk-ref="156"/>
+		<relation name="vfk_d_price_code_f_held_event_seat" type="vfk" pk-ref="11" fk-ref="39"/>
+		<relation name="vfk_d_manifest_seat_f_held_event_seat" type="vfk" pk-ref="11" fk-ref="119"/>
+		<relation name="vfk_d_price_code_f_ticket_held_event_seat" type="vfk" pk-ref="13" fk-ref="39"/>
+		<relation name="vfk_d_manifest_seat_f_ticket_held_event_seat" type="vfk" pk-ref="13" fk-ref="119"/>
+		<relation name="vfk_d_price_code_f_ticket_avail_event_seat" type="vfk" pk-ref="14" fk-ref="39"/>
+		<relation name="vfk_d_manifest_seat_f_ticket_avail_event_seat" type="vfk" pk-ref="14" fk-ref="119"/>
+		<relation name="vfk_d_ticket_status_f_ticket_avail_event_seat" type="vfk" pk-ref="14" fk-ref="150"/>
+		<relation name="vfk_d_price_code_f_ticket_inventory_event_seat" type="vfk" pk-ref="15" fk-ref="39"/>
+		<relation name="vfk_d_manifest_seat_f_ticket_inventory_event_seat" type="vfk" pk-ref="15" fk-ref="119"/>
+		<relation name="vfk_d_date_f_ticket_sales_event_audit_detail_daily" type="vfk" pk-ref="16" fk-ref="2"/>
+		<relation name="vfk_d_price_code_f_ticket_sales_event_audit_detail_daily" type="vfk" pk-ref="16" fk-ref="39"/>
+		<relation name="vfk_d_date_f_attendance_event_seat" type="vfk" pk-ref="17" fk-ref="2"/>
+		<relation name="vfk_d_price_code_f_attendance_event_seat" type="vfk" pk-ref="17" fk-ref="39"/>
+		<relation name="vfk_d_manifest_seat_f_attendance_event_seat" type="vfk" pk-ref="17" fk-ref="119"/>
+		<relation name="vfk_d_date_f_ticket_sales_host_event_audit" type="vfk" pk-ref="18" fk-ref="2"/>
+		<relation name="vfk_d_date_f_ticket_sales_host_event_audit_snapshot" type="vfk" pk-ref="20" fk-ref="2"/>
+		<relation name="vfk_d_host_audit_ticket_type_flags_f_ticket_sales_host_event_audit_snapshot" type="vfk" pk-ref="20" fk-ref="115"/>
+		<relation name="vfk_d_price_code_f_ticket_sales_event_seat" type="vfk" pk-ref="21" fk-ref="39"/>
+		<relation name="vfk_d_ticket_status_f_ticket_sales_event_seat" type="vfk" pk-ref="21" fk-ref="150"/>
+		<relation name="vfk_d_date_f_ticket_sales_event_audit_detail" type="vfk" pk-ref="22" fk-ref="2"/>
+		<relation name="vfk_d_date_f_fmb_sales_hdr_dtls" type="vfk" pk-ref="23" fk-ref="2"/>
+		<relation name="vfk_d_location_f_fmb_sales_hdr_dtls" type="vfk" pk-ref="23" fk-ref="45"/>
+		<relation name="vfk_d_terminal_f_fmb_sales_hdr_dtls" type="vfk" pk-ref="23" fk-ref="47"/>
+		<relation name="vfk_d_employee_f_fmb_sales_hdr_dtls" type="vfk" pk-ref="23" fk-ref="105"/>
+		<relation name="vfk_d_fmb_misc_f_fmb_sales_hdr_dtls" type="vfk" pk-ref="23" fk-ref="108"/>
+		<relation name="vfk_d_meal_period_f_fmb_sales_hdr_dtls" type="vfk" pk-ref="23" fk-ref="121"/>
+		<relation name="vfk_d_void_reason_f_fmb_sales_hdr_dtls" type="vfk" pk-ref="23" fk-ref="158"/>
+		<relation name="vfk_d_date_f_fmb_sales_product_dtls" type="vfk" pk-ref="24" fk-ref="2"/>
+		<relation name="vfk_d_location_f_fmb_sales_product_dtls" type="vfk" pk-ref="24" fk-ref="45"/>
+		<relation name="vfk_d_terminal_f_fmb_sales_product_dtls" type="vfk" pk-ref="24" fk-ref="47"/>
+		<relation name="vfk_d_product_f_fmb_sales_product_dtls" type="vfk" pk-ref="24" fk-ref="48"/>
+		<relation name="vfk_d_employee_f_fmb_sales_product_dtls" type="vfk" pk-ref="24" fk-ref="105"/>
+		<relation name="vfk_d_fmb_misc_f_fmb_sales_product_dtls" type="vfk" pk-ref="24" fk-ref="108"/>
+		<relation name="vfk_d_void_reason_f_fmb_sales_product_dtls" type="vfk" pk-ref="24" fk-ref="158"/>
+		<relation name="vfk_d_location_f_fmb_sales_tender_dtls" type="vfk" pk-ref="25" fk-ref="45"/>
+		<relation name="vfk_d_terminal_f_fmb_sales_tender_dtls" type="vfk" pk-ref="25" fk-ref="47"/>
+		<relation name="vfk_d_product_f_fmb_sales_tender_dtls" type="vfk" pk-ref="25" fk-ref="48"/>
+		<relation name="vfk_d_fmb_misc_f_fmb_sales_tender_dtls" type="vfk" pk-ref="25" fk-ref="108"/>
+		<relation name="vfk_d_tender_f_fmb_sales_tender_dtls" type="vfk" pk-ref="25" fk-ref="138"/>
+		<relation name="vfk_d_date_f_fmb_sales_hdr_dtls_test" type="vfk" pk-ref="26" fk-ref="2"/>
+		<relation name="vfk_d_location_f_fmb_sales_hdr_dtls_test" type="vfk" pk-ref="26" fk-ref="45"/>
+		<relation name="vfk_d_terminal_f_fmb_sales_hdr_dtls_test" type="vfk" pk-ref="26" fk-ref="47"/>
+		<relation name="vfk_d_employee_f_fmb_sales_hdr_dtls_test" type="vfk" pk-ref="26" fk-ref="105"/>
+		<relation name="vfk_d_fmb_misc_f_fmb_sales_hdr_dtls_test" type="vfk" pk-ref="26" fk-ref="108"/>
+		<relation name="vfk_d_meal_period_f_fmb_sales_hdr_dtls_test" type="vfk" pk-ref="26" fk-ref="121"/>
+		<relation name="vfk_d_void_reason_f_fmb_sales_hdr_dtls_test" type="vfk" pk-ref="26" fk-ref="158"/>
+		<relation name="vfk_d_date_f_fmb_sales_product_dtls_test" type="vfk" pk-ref="27" fk-ref="2"/>
+		<relation name="vfk_d_location_f_fmb_sales_product_dtls_test" type="vfk" pk-ref="27" fk-ref="45"/>
+		<relation name="vfk_d_terminal_f_fmb_sales_product_dtls_test" type="vfk" pk-ref="27" fk-ref="47"/>
+		<relation name="vfk_d_product_f_fmb_sales_product_dtls_test" type="vfk" pk-ref="27" fk-ref="48"/>
+		<relation name="vfk_d_employee_f_fmb_sales_product_dtls_test" type="vfk" pk-ref="27" fk-ref="105"/>
+		<relation name="vfk_d_fmb_misc_f_fmb_sales_product_dtls_test" type="vfk" pk-ref="27" fk-ref="108"/>
+		<relation name="vfk_d_meal_period_f_fmb_sales_product_dtls_test" type="vfk" pk-ref="27" fk-ref="121"/>
+		<relation name="vfk_d_void_reason_f_fmb_sales_product_dtls_test" type="vfk" pk-ref="27" fk-ref="158"/>
+		<relation name="vfk_d_date_f_fmb_sales_tender_dtls_test" type="vfk" pk-ref="28" fk-ref="2"/>
+		<relation name="vfk_d_location_f_fmb_sales_tender_dtls_test" type="vfk" pk-ref="28" fk-ref="45"/>
+		<relation name="vfk_d_terminal_f_fmb_sales_tender_dtls_test" type="vfk" pk-ref="28" fk-ref="47"/>
+		<relation name="vfk_d_product_f_fmb_sales_tender_dtls_test" type="vfk" pk-ref="28" fk-ref="48"/>
+		<relation name="vfk_d_fmb_misc_f_fmb_sales_tender_dtls_test" type="vfk" pk-ref="28" fk-ref="108"/>
+		<relation name="vfk_d_price_code_f_ticket_sales_event_seat_backup_dpt_522" type="vfk" pk-ref="29" fk-ref="39"/>
+		<relation name="vfk_d_ticket_status_f_ticket_sales_event_seat_backup_dpt_522" type="vfk" pk-ref="29" fk-ref="150"/>
+		<relation name="vfk_d_date_f_ticket_sales_event_audit_daily" type="vfk" pk-ref="30" fk-ref="2"/>
+		<relation name="vfk_d_price_code_f_ticket_sales_event_audit_daily" type="vfk" pk-ref="30" fk-ref="39"/>
+		<relation name="vfk_d_ticket_comp_code_f_ticket_sales_event_audit_daily" type="vfk" pk-ref="30" fk-ref="144"/>
+		<relation name="vfk_d_date_f_exctgt_matchback" type="vfk" pk-ref="31" fk-ref="2"/>
+		<relation name="vfk_d_exctgt_sendjobs_f_exctgt_matchback" type="vfk" pk-ref="31" fk-ref="92"/>
+		<relation name="vfk_d_date_f_ticket_sales_event_audit_snapshot" type="vfk" pk-ref="32" fk-ref="2"/>
+		<relation name="vfk_d_price_code_f_ticket_sales_event_audit_snapshot" type="vfk" pk-ref="32" fk-ref="39"/>
+		<relation name="vfk_d_ticket_comp_code_f_ticket_sales_event_audit_snapshot" type="vfk" pk-ref="32" fk-ref="144"/>
+		<relation name="vfk_d_location_f_fmb_sales_discount_dtls" type="vfk" pk-ref="33" fk-ref="45"/>
+		<relation name="vfk_d_product_f_fmb_sales_discount_dtls" type="vfk" pk-ref="33" fk-ref="48"/>
+		<relation name="f_ticket_activity_life_cycle_ticket_uuid_fkey" fq-name="ads_main.f_ticket_activity_life_cycle.f_ticket_activity_life_cycle_ticket_uuid_fkey" type="fk" pk-ref="34" fk-ref="36"/>
+		<relation name="vfk_d_manifest_seat_d_ticket_xref_old" type="vfk" pk-ref="35" fk-ref="119"/>
+		<relation name="vfk_d_price_code_f_ticket_activity_life_cycle" type="vfk" pk-ref="36" fk-ref="39"/>
+		<relation name="vfk_d_manifest_seat_f_ticket_activity_life_cycle" type="vfk" pk-ref="36" fk-ref="119"/>
+		<relation name="vfk_d_date_f_cons_event_summary" type="vfk" pk-ref="37" fk-ref="2"/>
+		<relation name="vfk_f_ticket_sales_event_seat_d_ticket_promo_code" type="vfk" pk-ref="38" fk-ref="21"/>
+		<relation name="vfk_f_ticket_sales_event_seat_backup_dpt_522_d_ticket_promo_code" type="vfk" pk-ref="38" fk-ref="29"/>
+		<relation name="vfk_f_ticket_sales_event_audit_detail_d_price_code" type="vfk" pk-ref="39" fk-ref="22"/>
+		<relation name="vfk_f_ticket_sales_event_seat_d_account_rep" type="vfk" pk-ref="42" fk-ref="21"/>
+		<relation name="vfk_f_ticket_sales_event_seat_backup_dpt_522_d_account_rep" type="vfk" pk-ref="42" fk-ref="29"/>
+		<relation name="vfk_f_held_event_seat_d_customer_account" type="vfk" pk-ref="43" fk-ref="11"/>
+		<relation name="vfk_f_ticket_held_event_seat_d_customer_account" type="vfk" pk-ref="43" fk-ref="13"/>
+		<relation name="vfk_f_attendance_event_seat_d_customer_account" type="vfk" pk-ref="43" fk-ref="17"/>
+		<relation name="vfk_f_ticket_sales_event_seat_d_customer_account" type="vfk" pk-ref="43" fk-ref="21"/>
+		<relation name="vfk_f_fmb_sales_hdr_dtls_d_customer_account" type="vfk" pk-ref="43" fk-ref="23"/>
+		<relation name="vfk_f_fmb_sales_tender_dtls_d_customer_account" type="vfk" pk-ref="43" fk-ref="25"/>
+		<relation name="vfk_f_fmb_sales_tender_dtls_test_d_customer_account" type="vfk" pk-ref="43" fk-ref="28"/>
+		<relation name="vfk_f_ticket_sales_event_seat_backup_dpt_522_d_customer_account" type="vfk" pk-ref="43" fk-ref="29"/>
+		<relation name="vfk_f_ticket_activity_life_cycle_d_customer_account" type="vfk" pk-ref="43" fk-ref="36"/>
+		<relation name="vfk_f_typeform_account_question_response_d_customer_account" type="vfk" pk-ref="43" fk-ref="93"/>
+		<relation name="vfk_f_medallia_survey_response_daily_d_customer_account" type="vfk" pk-ref="43" fk-ref="94"/>
+		<relation name="vfk_d_date_f_fmb_spoilage_dtls" type="vfk" pk-ref="44" fk-ref="2"/>
+		<relation name="vfk_d_location_f_fmb_spoilage_dtls" type="vfk" pk-ref="44" fk-ref="45"/>
+		<relation name="vfk_d_product_f_fmb_spoilage_dtls" type="vfk" pk-ref="44" fk-ref="48"/>
+		<relation name="vfk_d_date_f_fmb_merchandise_inventory_bkp" type="vfk" pk-ref="46" fk-ref="2"/>
+		<relation name="vfk_d_location_f_fmb_merchandise_inventory_bkp" type="vfk" pk-ref="46" fk-ref="45"/>
+		<relation name="vfk_d_product_f_fmb_merchandise_inventory_bkp" type="vfk" pk-ref="46" fk-ref="48"/>
+		<relation name="vfk_d_date_f_fmb_merchandise_inventory" type="vfk" pk-ref="49" fk-ref="2"/>
+		<relation name="vfk_d_location_f_fmb_merchandise_inventory" type="vfk" pk-ref="49" fk-ref="45"/>
+		<relation name="vfk_d_date_f_wfm_clock_activity_daily_summary" type="vfk" pk-ref="50" fk-ref="2"/>
+		<relation name="vfk_f_fmb_sales_hdr_dtls_d_wfm_venue" type="vfk" pk-ref="51" fk-ref="23"/>
+		<relation name="vfk_f_fmb_sales_product_dtls_d_wfm_venue" type="vfk" pk-ref="51" fk-ref="24"/>
+		<relation name="vfk_f_fmb_sales_tender_dtls_d_wfm_venue" type="vfk" pk-ref="51" fk-ref="25"/>
+		<relation name="vfk_f_fmb_sales_hdr_dtls_test_d_wfm_venue" type="vfk" pk-ref="51" fk-ref="26"/>
+		<relation name="vfk_f_fmb_sales_product_dtls_test_d_wfm_venue" type="vfk" pk-ref="51" fk-ref="27"/>
+		<relation name="vfk_f_fmb_sales_tender_dtls_test_d_wfm_venue" type="vfk" pk-ref="51" fk-ref="28"/>
+		<relation name="vfk_f_fmb_sales_discount_dtls_d_wfm_venue" type="vfk" pk-ref="51" fk-ref="33"/>
+		<relation name="vfk_d_location_d_wfm_venue" type="vfk" pk-ref="51" fk-ref="45"/>
+		<relation name="vfk_d_terminal_d_wfm_venue" type="vfk" pk-ref="51" fk-ref="47"/>
+		<relation name="vfk_d_product_d_wfm_venue" type="vfk" pk-ref="51" fk-ref="48"/>
+		<relation name="vfk_f_wfm_clock_activity_daily_summary_d_wfm_venue" type="vfk" pk-ref="51" fk-ref="50"/>
+		<relation name="vfk_f_wfm_clock_activity_d_wfm_venue" type="vfk" pk-ref="51" fk-ref="52"/>
+		<relation name="vfk_d_date_f_wfm_clock_activity" type="vfk" pk-ref="52" fk-ref="2"/>
+		<relation name="vfk_f_fmb_sales_discount_dtls_d_discount" type="vfk" pk-ref="53" fk-ref="33"/>
+		<relation name="vfk_f_fmb_merchandise_inventory_bkp_d_product_ingredients" type="vfk" pk-ref="54" fk-ref="46"/>
+		<relation name="vfk_f_fmb_merchandise_inventory_d_product_ingredients" type="vfk" pk-ref="54" fk-ref="49"/>
+		<relation name="vfk_f_attendance_event_seat_d_arena_gate" type="vfk" pk-ref="56" fk-ref="17"/>
+		<relation name="vfk_f_attendance_event_seat_d_attendance_access" type="vfk" pk-ref="57" fk-ref="17"/>
+		<relation name="vfk_f_attendance_event_seat_d_attendance_scan_result" type="vfk" pk-ref="58" fk-ref="17"/>
+		<relation name="vfk_d_seasons_d_business_org" type="vfk" pk-ref="59" fk-ref="60"/>
+		<relation name="vfk_f_executive_kpi_dashboard_d_business_org" type="vfk" pk-ref="59" fk-ref="61"/>
+		<relation name="vfk_f_executive_kpi_dashboard_d_seasons" type="vfk" pk-ref="60" fk-ref="61"/>
+		<relation name="vfk_d_sfdc_koreps_season_f_sfdc_opportunity" type="vfk" pk-ref="63" fk-ref="62"/>
+		<relation name="vfk_d_sfdc_user_f_sfdc_opportunity" type="vfk" pk-ref="63" fk-ref="64"/>
+		<relation name="vfk_f_sfdc_suit_usage_f_sfdc_opportunity" type="vfk" pk-ref="63" fk-ref="65"/>
+		<relation name="vfk_d_sfdc_campaign_f_sfdc_opportunity" type="vfk" pk-ref="63" fk-ref="68"/>
+		<relation name="vfk_d_sfdc_recordtype_f_sfdc_opportunity" type="vfk" pk-ref="63" fk-ref="69"/>
+		<relation name="vfk_d_sfdc_bank_f_sfdc_opportunity" type="vfk" pk-ref="63" fk-ref="70"/>
+		<relation name="vfk_d_sfdc_koreps_event_f_sfdc_opportunity" type="vfk" pk-ref="63" fk-ref="71"/>
+		<relation name="vfk_d_sfdc_koreps_industry_f_sfdc_opportunity" type="vfk" pk-ref="63" fk-ref="72"/>
+		<relation name="vfk_d_sfdc_opportunity_item_f_sfdc_opportunity" type="vfk" pk-ref="63" fk-ref="74"/>
+		<relation name="vfk_f_sfdc_opportunity_d_sfdc_account" type="vfk" pk-ref="66" fk-ref="63"/>
+		<relation name="vfk_f_sfdc_opportunity_d_sfdc_contact" type="vfk" pk-ref="67" fk-ref="63"/>
+		<relation name="vfk_f_sfdc_opportunity_d_sfdc_koreps_division" type="vfk" pk-ref="73" fk-ref="63"/>
+		<relation name="vfk_f_ticket_sales_event_seat_d_customer_master" type="vfk" pk-ref="76" fk-ref="21"/>
+		<relation name="vfk_f_ticket_sales_event_seat_backup_dpt_522_d_customer_master" type="vfk" pk-ref="76" fk-ref="29"/>
+		<relation name="vfk_f_ticket_activity_life_cycle_d_customer_master" type="vfk" pk-ref="76" fk-ref="36"/>
+		<relation name="vfk_f_fan_property_channel_d_customer_master" type="vfk" pk-ref="76" fk-ref="78"/>
+		<relation name="vfk_f_fan_property_d_customer_master" type="vfk" pk-ref="76" fk-ref="79"/>
+		<relation name="vfk_f_leagueapps_registration_d_customer_master" type="vfk" pk-ref="76" fk-ref="80"/>
+		<relation name="vfk_f_form_submissions_d_customer_master" type="vfk" pk-ref="76" fk-ref="81"/>
+		<relation name="vfk_f_typeform_account_question_response_d_customer_master" type="vfk" pk-ref="76" fk-ref="93"/>
+		<relation name="vfk_d_customer_account_d_customer_master_keys" type="vfk" pk-ref="77" fk-ref="43"/>
+		<relation name="vfk_d_customer_master_d_customer_master_keys" type="vfk" pk-ref="77" fk-ref="76"/>
+		<relation name="vfk_f_fan_property_channel_d_customer_master_keys" type="vfk" pk-ref="77" fk-ref="78"/>
+		<relation name="vfk_f_fan_property_d_customer_master_keys" type="vfk" pk-ref="77" fk-ref="79"/>
+		<relation name="vfk_d_exctgt_subscribers_d_customer_master_keys" type="vfk" pk-ref="77" fk-ref="82"/>
+		<relation name="vfk_f_exctgt_matchback_d_exctgt_subscribers" type="vfk" pk-ref="82" fk-ref="31"/>
+		<relation name="vfk_f_exctgt_click_emails_d_exctgt_subscribers" type="vfk" pk-ref="82" fk-ref="96"/>
+		<relation name="vfk_f_exctgt_open_emails_d_exctgt_subscribers" type="vfk" pk-ref="82" fk-ref="97"/>
+		<relation name="vfk_f_exctgt_bounce_emails_d_exctgt_subscribers" type="vfk" pk-ref="82" fk-ref="98"/>
+		<relation name="vfk_f_exctgt_unsubs_d_exctgt_subscribers" type="vfk" pk-ref="82" fk-ref="99"/>
+		<relation name="vfk_f_exctgt_job_kpis_d_exctgt_subscribers" type="vfk" pk-ref="82" fk-ref="100"/>
+		<relation name="vfk_f_exctgt_sent_emails_d_exctgt_subscribers" type="vfk" pk-ref="82" fk-ref="101"/>
+		<relation name="vfk_f_form_submissions_d_forms_customer_account" type="vfk" pk-ref="83" fk-ref="81"/>
+		<relation name="vfk_f_leagueapps_registration_d_leagueapps_customer_account" type="vfk" pk-ref="84" fk-ref="80"/>
+		<relation name="vfk_f_exctgt_bounce_emails_d_exctgt_bounce_category" type="vfk" pk-ref="85" fk-ref="98"/>
+		<relation name="vfk_f_exctgt_brand_email_snapshot_daily_d_exctgt_brand" type="vfk" pk-ref="86" fk-ref="95"/>
+		<relation name="vfk_f_exctgt_click_emails_d_exctgt_click_url" type="vfk" pk-ref="88" fk-ref="96"/>
+		<relation name="vfk_f_exctgt_open_emails_d_exctgt_client_device" type="vfk" pk-ref="89" fk-ref="97"/>
+		<relation name="vfk_f_exctgt_unsubs_d_exctgt_email_lists" type="vfk" pk-ref="90" fk-ref="99"/>
+		<relation name="vfk_f_exctgt_unsubs_d_exctgt_segment" type="vfk" pk-ref="91" fk-ref="99"/>
+		<relation name="vfk_f_exctgt_job_kpis_d_exctgt_sendjobs" type="vfk" pk-ref="92" fk-ref="100"/>
+		<relation name="vfk_d_date_f_medallia_survey_response_daily" type="vfk" pk-ref="94" fk-ref="2"/>
+		<relation name="vfk_d_exctgt_email_lists_f_exctgt_click_emails" type="vfk" pk-ref="96" fk-ref="90"/>
+		<relation name="vfk_d_exctgt_segment_f_exctgt_click_emails" type="vfk" pk-ref="96" fk-ref="91"/>
+		<relation name="vfk_d_exctgt_sendjobs_f_exctgt_click_emails" type="vfk" pk-ref="96" fk-ref="92"/>
+		<relation name="vfk_d_exctgt_email_lists_f_exctgt_open_emails" type="vfk" pk-ref="97" fk-ref="90"/>
+		<relation name="vfk_d_exctgt_segment_f_exctgt_open_emails" type="vfk" pk-ref="97" fk-ref="91"/>
+		<relation name="vfk_d_exctgt_sendjobs_f_exctgt_open_emails" type="vfk" pk-ref="97" fk-ref="92"/>
+		<relation name="vfk_d_exctgt_email_lists_f_exctgt_bounce_emails" type="vfk" pk-ref="98" fk-ref="90"/>
+		<relation name="vfk_d_exctgt_segment_f_exctgt_bounce_emails" type="vfk" pk-ref="98" fk-ref="91"/>
+		<relation name="vfk_d_exctgt_sendjobs_f_exctgt_bounce_emails" type="vfk" pk-ref="98" fk-ref="92"/>
+		<relation name="vfk_d_exctgt_sendjobs_f_exctgt_unsubs" type="vfk" pk-ref="99" fk-ref="92"/>
+		<relation name="vfk_d_exctgt_segment_f_exctgt_job_kpis" type="vfk" pk-ref="100" fk-ref="91"/>
+		<relation name="vfk_d_exctgt_email_lists_f_exctgt_sent_emails" type="vfk" pk-ref="101" fk-ref="90"/>
+		<relation name="vfk_d_exctgt_segment_f_exctgt_sent_emails" type="vfk" pk-ref="101" fk-ref="91"/>
+		<relation name="vfk_d_exctgt_segment_f_exctgt_job_kpis_summary" type="vfk" pk-ref="102" fk-ref="91"/>
+		<relation name="vfk_d_exctgt_sendjobs_f_exctgt_job_kpis_summary" type="vfk" pk-ref="102" fk-ref="92"/>
+		<relation name="vfk_f_emp_clock_activity_dly_cnt_d_emp_job" type="vfk" pk-ref="104" fk-ref="110"/>
+		<relation name="vfk_d_wfm_emp_job_d_emp_job" type="vfk" pk-ref="104" fk-ref="111"/>
+		<relation name="vfk_f_wfm_clock_activity_d_employee" type="vfk" pk-ref="105" fk-ref="52"/>
+		<relation name="vfk_d_emp_job_d_employee" type="vfk" pk-ref="105" fk-ref="104"/>
+		<relation name="vfk_d_wfm_emp_job_d_employee" type="vfk" pk-ref="105" fk-ref="111"/>
+		<relation name="vfk_d_msg_employee_d_employee" type="vfk" pk-ref="105" fk-ref="123"/>
+		<relation name="vfk_f_microsoft_teams_user_activity_daily_d_employee" type="vfk" pk-ref="105" fk-ref="160"/>
+		<relation name="vfk_f_fan_property_channel_d_fan_channel" type="vfk" pk-ref="107" fk-ref="78"/>
+		<relation name="vfk_f_fan_property_d_fan_channel" type="vfk" pk-ref="107" fk-ref="79"/>
+		<relation name="vfk_f_form_submissions_d_form" type="vfk" pk-ref="114" fk-ref="81"/>
+		<relation name="vfk_f_ticket_sales_host_event_audit_d_host_audit_ticket_type_flags" type="vfk" pk-ref="115" fk-ref="18"/>
+		<relation name="vfk_f_avail_event_seats_d_host_dist_status" type="vfk" pk-ref="116" fk-ref="7"/>
+		<relation name="vfk_f_leagueapps_registration_d_leagueapps_misc" type="vfk" pk-ref="117" fk-ref="80"/>
+		<relation name="vfk_f_leagueapps_registration_d_leagueapps_program" type="vfk" pk-ref="118" fk-ref="80"/>
+		<relation name="vfk_d_ticket_xref_d_manifest_seat" type="vfk" pk-ref="119" fk-ref="34"/>
+		<relation name="vfk_f_fmb_sales_product_dtls_d_meal_period" type="vfk" pk-ref="121" fk-ref="24"/>
+		<relation name="vfk_f_medallia_survey_response_daily_d_medallia_survey_questions" type="vfk" pk-ref="122" fk-ref="94"/>
+		<relation name="vfk_f_fan_property_channel_d_property" type="vfk" pk-ref="125" fk-ref="78"/>
+		<relation name="vfk_f_fan_property_d_property" type="vfk" pk-ref="125" fk-ref="79"/>
+		<relation name="vfk_f_cons_engagement_event_d_scenario_type" type="vfk" pk-ref="126" fk-ref="6"/>
+		<relation name="vfk_f_event_cost_d_scenario_type" type="vfk" pk-ref="126" fk-ref="10"/>
+		<relation name="vfk_f_cons_event_summary_d_scenario_type" type="vfk" pk-ref="126" fk-ref="37"/>
+		<relation name="f_sprout_data_post_sprout_customer_tag_id_fkey" fq-name="ads_main.f_sprout_data_post.f_sprout_data_post_sprout_customer_tag_id_fkey" type="fk" pk-ref="135" fk-ref="142"/>
+		<relation name="f_sprout_data_post_sprout_network_endpoint_id_fkey" fq-name="ads_main.f_sprout_data_post.f_sprout_data_post_sprout_network_endpoint_id_fkey" type="fk" pk-ref="136" fk-ref="142"/>
+		<relation name="f_sprout_data_profile_sprout_network_endpoint_id_fkey" fq-name="ads_main.f_sprout_data_profile.f_sprout_data_profile_sprout_network_endpoint_id_fkey" type="fk" pk-ref="136" fk-ref="165"/>
+		<relation name="f_sprout_data_post_sprout_post_url_id_fkey" fq-name="ads_main.f_sprout_data_post.f_sprout_data_post_sprout_post_url_id_fkey" type="fk" pk-ref="137" fk-ref="142"/>
+		<relation name="vfk_f_fmb_sales_tender_dtls_test_d_tender_test" type="vfk" pk-ref="139" fk-ref="28"/>
+		<relation name="vfk_f_ticket_sales_event_seat_d_ticket_came_from_code" type="vfk" pk-ref="140" fk-ref="21"/>
+		<relation name="vfk_f_ticket_sales_event_audit_daily_d_ticket_class" type="vfk" pk-ref="143" fk-ref="30"/>
+		<relation name="vfk_f_ticket_sales_event_audit_snapshot_d_ticket_class" type="vfk" pk-ref="143" fk-ref="32"/>
+		<relation name="vfk_f_ticket_exchange_event_seat_d_ticket_exchange_activity" type="vfk" pk-ref="145" fk-ref="9"/>
+		<relation name="vfk_f_ticket_sales_event_audit_daily_d_ticket_flags" type="vfk" pk-ref="146" fk-ref="30"/>
+		<relation name="vfk_f_ticket_sales_event_audit_snapshot_d_ticket_flags" type="vfk" pk-ref="146" fk-ref="32"/>
+		<relation name="vfk_f_ticket_sales_event_seat_d_ticket_ledger" type="vfk" pk-ref="147" fk-ref="21"/>
+		<relation name="vfk_f_ticket_sales_event_seat_backup_dpt_522_d_ticket_ledger" type="vfk" pk-ref="147" fk-ref="29"/>
+		<relation name="vfk_f_ticket_sales_event_seat_d_ticket_retail" type="vfk" pk-ref="148" fk-ref="21"/>
+		<relation name="vfk_f_ticket_sales_event_audit_daily_d_ticket_retail" type="vfk" pk-ref="148" fk-ref="30"/>
+		<relation name="vfk_f_ticket_sales_event_audit_snapshot_d_ticket_retail" type="vfk" pk-ref="148" fk-ref="32"/>
+		<relation name="vfk_f_ticket_sales_event_audit_daily_d_ticket_sell_location" type="vfk" pk-ref="149" fk-ref="30"/>
+		<relation name="vfk_f_ticket_sales_event_audit_snapshot_d_ticket_sell_location" type="vfk" pk-ref="149" fk-ref="32"/>
+		<relation name="vfk_f_ticket_held_event_seat_d_ticket_status" type="vfk" pk-ref="150" fk-ref="13"/>
+		<relation name="vfk_f_ticket_held_event_seat_d_ticket_type_desc" type="vfk" pk-ref="151" fk-ref="13"/>
+		<relation name="vfk_f_ticket_avail_event_seat_d_ticket_type_desc" type="vfk" pk-ref="151" fk-ref="14"/>
+		<relation name="vfk_f_ticket_inventory_event_seat_d_ticket_type_desc" type="vfk" pk-ref="151" fk-ref="15"/>
+		<relation name="vfk_f_attendance_event_seat_d_ticket_type_desc" type="vfk" pk-ref="151" fk-ref="17"/>
+		<relation name="vfk_f_ticket_sales_event_seat_d_ticket_type_desc" type="vfk" pk-ref="151" fk-ref="21"/>
+		<relation name="vfk_f_ticket_sales_event_seat_backup_dpt_522_d_ticket_type_desc" type="vfk" pk-ref="151" fk-ref="29"/>
+		<relation name="vfk_f_front_gate_d_ticket_type_desc" type="vfk" pk-ref="151" fk-ref="167"/>
+		<relation name="vfk_f_held_event_seat_d_ticket_type_flags" type="vfk" pk-ref="152" fk-ref="11"/>
+		<relation name="vfk_f_ticket_held_event_seat_d_ticket_type_flags" type="vfk" pk-ref="152" fk-ref="13"/>
+		<relation name="vfk_f_ticket_avail_event_seat_d_ticket_type_flags" type="vfk" pk-ref="152" fk-ref="14"/>
+		<relation name="vfk_f_ticket_inventory_event_seat_d_ticket_type_flags" type="vfk" pk-ref="152" fk-ref="15"/>
+		<relation name="vfk_f_ticket_sales_event_audit_detail_daily_d_ticket_type_flags" type="vfk" pk-ref="152" fk-ref="16"/>
+		<relation name="vfk_f_ticket_sales_event_seat_d_ticket_type_flags" type="vfk" pk-ref="152" fk-ref="21"/>
+		<relation name="vfk_f_ticket_sales_event_audit_detail_d_ticket_type_flags" type="vfk" pk-ref="152" fk-ref="22"/>
+		<relation name="vfk_f_ticket_sales_event_seat_backup_dpt_522_d_ticket_type_flags" type="vfk" pk-ref="152" fk-ref="29"/>
+		<relation name="vfk_f_exctgt_matchback_d_ticket_type_flags" type="vfk" pk-ref="152" fk-ref="31"/>
+		<relation name="vfk_f_typeform_account_question_response_d_typeform_question" type="vfk" pk-ref="153" fk-ref="93"/>
+		<relation name="vfk_f_typeform_account_question_response_d_typeform_response" type="vfk" pk-ref="154" fk-ref="93"/>
+	</relations>
+</diagram>
