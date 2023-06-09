@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="ticket model org.erd">
+	<entities>
+		<data-source id="postgres-redshift-jdbc-18897872def-72ce79d8062f484b">
+			<entity id="1" name="d_event_plan" fq-name="ads_main.d_event_plan" order="10" color-bg="255,255,128" x="2480" y="2640">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="2" name="d_price_code" fq-name="ads_main.d_price_code" order="11" color-bg="255,255,128" x="900" y="2800">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="3" name="d_ticket_came_from_code" fq-name="ads_main.d_ticket_came_from_code" order="12" color-bg="255,255,128" x="3180" y="2540">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="4" name="d_ticket_class" fq-name="ads_main.d_ticket_class" order="13" color-bg="255,255,128" x="230" y="2819">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="5" name="d_ticket_comp_code" fq-name="ads_main.d_ticket_comp_code" order="14" color-bg="255,255,128" x="-145" y="2821">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="6" name="d_ticket_exchange_activity" fq-name="ads_main.d_ticket_exchange_activity" order="15" color-bg="255,255,128" x="3669" y="2020">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="7" name="d_ticket_flags" fq-name="ads_main.d_ticket_flags" order="16" color-bg="255,255,128" x="30" y="2819">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="8" name="d_ticket_ledger" fq-name="ads_main.d_ticket_ledger" order="17" color-bg="255,255,128" x="3449" y="1980">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="9" name="d_ticket_premium_charge" fq-name="ads_main.d_ticket_premium_charge" order="18" color-bg="255,255,128" x="-240" y="2560">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="10" name="d_ticket_promo_code" fq-name="ads_main.d_ticket_promo_code" order="19" color-bg="255,255,128" x="3449" y="1440">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="11" name="d_ticket_retail" fq-name="ads_main.d_ticket_retail" order="20" color-bg="255,255,128" x="1140" y="740">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="12" name="d_ticket_sell_location" fq-name="ads_main.d_ticket_sell_location" order="21" color-bg="255,255,128" x="450" y="2819">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="13" name="d_ticket_status" fq-name="ads_main.d_ticket_status" order="22" color-bg="255,255,128" x="3360" y="2520">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="14" name="d_ticket_type_desc" fq-name="ads_main.d_ticket_type_desc" order="23" color-bg="255,255,128" x="1780" y="760">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="15" name="d_ticket_type_flags" fq-name="ads_main.d_ticket_type_flags" order="24" color-bg="255,255,128" x="2080" y="600">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="16" name="d_ticket_xref" fq-name="ads_main.d_ticket_xref" order="25" color-bg="255,255,128" x="1580" y="720">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="17" name="f_ticket_exchange_event_seat" fq-name="ads_main.f_ticket_exchange_event_seat" order="26" color-bg="128,255,128" x="3649" y="1440">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="18" name="f_ticket_sales_event_audit" fq-name="ads_main.f_ticket_sales_event_audit" order="27" color-bg="128,255,128" x="1755" y="1431">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="19" name="f_ticket_sales_event_audit_daily" fq-name="ads_main.f_ticket_sales_event_audit_daily" order="28" color-bg="128,255,128" x="295" y="1425">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="20" name="f_ticket_sales_event_audit_detail" fq-name="ads_main.f_ticket_sales_event_audit_detail" order="29" color-bg="128,255,128" x="1480" y="1420">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="21" name="f_ticket_sales_event_audit_detail_daily" fq-name="ads_main.f_ticket_sales_event_audit_detail_daily" order="30" color-bg="128,255,128" x="1180" y="1420">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="22" name="f_ticket_sales_event_audit_snapshot" fq-name="ads_main.f_ticket_sales_event_audit_snapshot" order="31" color-bg="128,255,128" x="-185" y="1425">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="23" name="f_ticket_sales_event_seat" fq-name="ads_main.f_ticket_sales_event_seat" order="32" color-bg="128,255,128" x="3229" y="1440">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="24" name="f_ticket_sales_host_event_audit" fq-name="ads_main.f_ticket_sales_host_event_audit" order="33" color-bg="128,255,128" x="1995" y="1431">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="25" name="f_ticket_sales_host_event_audit_snapshot" fq-name="ads_main.f_ticket_sales_host_event_audit_snapshot" order="34" color-bg="128,255,128" x="2200" y="1440">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="26" name="t_ticket_avail_event_seat" fq-name="ads_main.t_ticket_avail_event_seat" order="51" color-bg="255,128,255" x="2980" y="1680">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="27" name="t_ticket_held_event_seat" fq-name="ads_main.t_ticket_held_event_seat" order="35" color-bg="255,128,255" x="2980" y="1880">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="28" name="t_ticket_inventory_event_seat" fq-name="ads_main.t_ticket_inventory_event_seat" order="36" color-bg="255,128,255" x="2980" y="2060">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="29" name="t_ticket_sales_audit" fq-name="ads_main.t_ticket_sales_audit" order="37" color-bg="255,128,255" x="35" y="1465">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="30" name="t_ticket_sales_audit_daily" fq-name="ads_main.t_ticket_sales_audit_daily" order="38" color-bg="255,128,255" x="40" y="1680">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="31" name="t_ticket_sales_event_data_quality" fq-name="ads_main.t_ticket_sales_event_data_quality" order="39" color-bg="255,128,255" x="40" y="2040">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="32" name="t_ticket_sales_event_seat" fq-name="ads_main.t_ticket_sales_event_seat" order="40" color-bg="255,128,255" x="2980" y="1480">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="33" name="t_ticket_sales_event_seat_demo" fq-name="ads_main.t_ticket_sales_event_seat_demo" order="41" color-bg="255,128,255" x="2474" y="1500">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="34" name="vw_f_ticket_sales_audit_daily_testing" fq-name="ads_main.vw_f_ticket_sales_audit_daily_testing" order="42" color-bg="0,255,255" x="940" y="1440">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="35" name="vw_f_ticket_sales_event_audit_daily" fq-name="ads_main.vw_f_ticket_sales_event_audit_daily" order="43" color-bg="0,255,255" x="580" y="1440">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="36" name="vw_sphere_ticket_purchase" fq-name="ads_main.vw_sphere_ticket_purchase" order="44" color-bg="0,255,255" x="3234" y="1220">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="37" name="vw_ticket_flash_adj" fq-name="ads_main.vw_ticket_flash_adj" order="45" color-bg="0,255,255" x="2495" y="688">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="38" name="vw_ticket_sales_event_seat_demo" fq-name="ads_main.vw_ticket_sales_event_seat_demo" order="46" color-bg="0,255,255" border-width="3" x="2654" y="1500">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="39" name="vw_tmp_ticket_sales_demo" fq-name="ads_main.vw_tmp_ticket_sales_demo" order="47" color-bg="0,255,255" x="2720" y="717">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="40" name="mv_ticketmaster_host_audit" fq-name="ads_main.mv_ticketmaster_host_audit" order="48" color-bg="128,255,255" x="2995" y="676">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="41" name="stg_tm_ticket_fevo" fq-name="ads_main.stg_tm_ticket_fevo" order="49" color-bg="128,255,255" x="3214" y="673">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+			<entity id="42" name="temp_d_host_audit_ticket_type_flags" fq-name="ads_main.temp_d_host_audit_ticket_type_flags" order="50" color-bg="200,255,255" x="2040" y="1960">
+				<path name="ads_main"/>
+				<path name="msgbiadb"/>
+			</entity>
+		</data-source>
+	</entities>
+	<notes>
+		<note id="43" order="9" color-bg="217,255,255" x="495" y="1585" w="100" h="100">Views: direct one-to-one relation;
+select columns, use split_apart, etc.</note>
+		<note id="44" order="8" color-bg="255,234,255" x="3154" y="1820" w="100" h="80">aggregated or summarized version(for business org)</note>
+		<note id="45" order="7" color-bg="255,234,255" x="215" y="1585" w="100" h="80">aggregated or summarized version(for business org)</note>
+		<note id="46" order="6" color-bg="217,255,255" x="2854" y="1560" w="120" h="100">Views:t_ticket_sales_event_seat LEFT JOIN d_price_code; calculate d fields
+ </note>
+		<note id="47" order="5" color-bg="217,255,255" x="780" y="1560" w="200" h="152">Views: LEFT JOIN vw_f_ticket_sales_event_audit_daily, d_event_plan , d_price_code , d_ticket_type_
+, ads_staging.mpd_tableau_extract_partitions, d_ticket_comp_code, d_ticket_flags, d_ticket_sell_location, d_ticket_retail, d_ticket_class
+</note>
+		<note id="48" order="4" color-bg="217,255,255" x="3254" y="1360" w="122" h="78">Views: LEFT JOIN f_ticket_sales_event_seat, d_event_plan, d_date; calculated fields</note>
+		<note id="49" order="3" color-bg="217,255,255" x="2495" y="628" w="174" h="66">View: direct one-to-one relation;
+select from ads_staging.mpd_mse_flash_adj</note>
+		<note id="50" order="2" color-bg="217,255,255" x="2720" y="637" w="200" h="100">Views: JOIN ads_staging.tmp_bulk_cust_demo_tickets, d_date, d_date currdt, d_date eventdt, ads_staging.tmp_bulk_cust_demo_customers</note>
+		<note id="51" order="1" color-bg="217,255,255" x="2995" y="616" w="140" h="55">View: LEFT JOIN ticketmaster.host_audit, d_event_plan; where clause</note>
+		<note id="52" order="0" color-bg="217,255,255" x="3204" y="623" w="167" h="60">View: select from ads_staging.avw_stg_tm_pullticket; where clause</note>
+	</notes>
+	<relations>
+		<relation name="vfk_f_ticket_exchange_event_seat_d_event_plan" type="vfk" pk-ref="1" fk-ref="17"/>
+		<relation name="vfk_f_ticket_sales_event_audit_d_event_plan" type="vfk" pk-ref="1" fk-ref="18"/>
+		<relation name="vfk_f_ticket_sales_event_audit_detail_d_event_plan" type="vfk" pk-ref="1" fk-ref="20"/>
+		<relation name="vfk_f_ticket_sales_event_audit_detail_daily_d_event_plan" type="vfk" pk-ref="1" fk-ref="21"/>
+		<relation name="vfk_f_ticket_sales_event_audit_snapshot_d_event_plan" type="vfk" pk-ref="1" fk-ref="22"/>
+		<relation name="vfk_f_ticket_sales_event_seat_d_event_plan" type="vfk" pk-ref="1" fk-ref="23"/>
+		<relation name="vfk_f_ticket_sales_host_event_audit_d_event_plan" type="vfk" pk-ref="1" fk-ref="24"/>
+		<relation name="vfk_f_ticket_sales_host_event_audit_snapshot_d_event_plan" type="vfk" pk-ref="1" fk-ref="25"/>
+		<relation name="vfk_f_ticket_sales_event_seat_d_ticket_came_from_code" type="vfk" pk-ref="3" fk-ref="23"/>
+		<relation name="vfk_f_ticket_sales_event_audit_daily_d_ticket_class" type="vfk" pk-ref="4" fk-ref="19"/>
+		<relation name="vfk_f_ticket_sales_event_audit_snapshot_d_ticket_class" type="vfk" pk-ref="4" fk-ref="22"/>
+		<relation name="vfk_f_ticket_exchange_event_seat_d_ticket_exchange_activity" type="vfk" pk-ref="6" fk-ref="17"/>
+		<relation name="vfk_f_ticket_sales_event_audit_daily_d_ticket_flags" type="vfk" pk-ref="7" fk-ref="19"/>
+		<relation name="vfk_f_ticket_sales_event_audit_snapshot_d_ticket_flags" type="vfk" pk-ref="7" fk-ref="22"/>
+		<relation name="vfk_f_ticket_sales_event_seat_d_ticket_ledger" type="vfk" pk-ref="8" fk-ref="23"/>
+		<relation name="vfk_f_ticket_sales_event_seat_d_ticket_promo_code" type="vfk" pk-ref="10" fk-ref="23"/>
+		<relation name="vfk_f_ticket_sales_event_audit_daily_d_ticket_retail" type="vfk" pk-ref="11" fk-ref="19"/>
+		<relation name="vfk_f_ticket_sales_event_audit_snapshot_d_ticket_retail" type="vfk" pk-ref="11" fk-ref="22"/>
+		<relation name="vfk_f_ticket_sales_event_seat_d_ticket_retail" type="vfk" pk-ref="11" fk-ref="23"/>
+		<relation name="vfk_f_ticket_sales_event_audit_snapshot_d_ticket_sell_location" type="vfk" pk-ref="12" fk-ref="22"/>
+		<relation name="vfk_f_ticket_sales_event_seat_d_ticket_status" type="vfk" pk-ref="13" fk-ref="23"/>
+		<relation name="vfk_f_ticket_sales_event_audit_daily_d_ticket_type_desc" type="vfk" pk-ref="14" fk-ref="19"/>
+		<relation name="vfk_f_ticket_sales_event_audit_detail_d_ticket_type_desc" type="vfk" pk-ref="14" fk-ref="20"/>
+		<relation name="vfk_f_ticket_sales_event_audit_detail_daily_d_ticket_type_desc" type="vfk" pk-ref="14" fk-ref="21"/>
+		<relation name="vfk_f_ticket_sales_event_audit_snapshot_d_ticket_type_desc" type="vfk" pk-ref="14" fk-ref="22"/>
+		<relation name="vfk_f_ticket_sales_event_seat_d_ticket_type_desc" type="vfk" pk-ref="14" fk-ref="23"/>
+		<relation name="vfk_f_ticket_sales_event_audit_detail_d_ticket_type_flags" type="vfk" pk-ref="15" fk-ref="20"/>
+		<relation name="vfk_f_ticket_sales_event_audit_detail_daily_d_ticket_type_flags" type="vfk" pk-ref="15" fk-ref="21"/>
+		<relation name="vfk_f_ticket_sales_event_seat_d_ticket_type_flags" type="vfk" pk-ref="15" fk-ref="23"/>
+		<relation name="vfk_d_price_code_f_ticket_sales_event_audit" type="vfk" pk-ref="18" fk-ref="2"/>
+		<relation name="vfk_d_ticket_comp_code_f_ticket_sales_event_audit_daily" type="vfk" pk-ref="19" fk-ref="5"/>
+		<relation name="vfk_d_price_code_f_ticket_sales_event_audit_detail" type="vfk" pk-ref="20" fk-ref="2"/>
+		<relation name="vfk_d_price_code_f_ticket_sales_event_audit_detail_daily" type="vfk" pk-ref="21" fk-ref="2"/>
+		<relation name="vfk_d_price_code_f_ticket_sales_event_audit_snapshot" type="vfk" pk-ref="22" fk-ref="2"/>
+		<relation name="vfk_d_ticket_comp_code_f_ticket_sales_event_audit_snapshot" type="vfk" pk-ref="22" fk-ref="5"/>
+		<relation name="vfk_d_price_code_f_ticket_sales_event_seat" type="vfk" pk-ref="23" fk-ref="2"/>
+		<relation name="vfk_f_ticket_sales_host_event_audit_temp_d_host_audit_ticket_type_flags" type="vfk" pk-ref="42" fk-ref="24"/>
+		<relation name="vfk_f_ticket_sales_host_event_audit_snapshot_temp_d_host_audit_ticket_type_flags" type="vfk" pk-ref="42" fk-ref="25"/>
+	</relations>
+</diagram>

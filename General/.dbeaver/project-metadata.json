@@ -1,0 +1,1 @@
+{"resources":{"Scripts/data model.sql":{"default-schema":"ads_main","default-datasource":"postgres-redshift-jdbc-18897872def-72ce79d8062f484b","default-catalog":"msgbiadb"},"Scripts/notes.sql":{"default-schema":"ads_main","default-datasource":"postgres-redshift-jdbc-1888be0366d-6484c7c62dee3c8b","default-catalog":"msgbiadb"}}}
